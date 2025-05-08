@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="winch, winches, heavy-duty winches, winch supplier, winch manufacturer, winch technology, winch products, winch specifications, winch features, winch testimonials">
     <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Better Winch</title>
+    <title>WinchX</title>
     <style>
         :root {
             --primary-color: #e63946;
@@ -661,7 +661,17 @@
             background-color: var(--secondary-color);
             transform: translateY(-3px);
         }
+
+        .footer-social a i {
+            color: #fff !important;
+            transition: color 0.3s;
+        }
+        .footer-social a:hover i {
+            color: var(--primary-color) !important;
+        }
     </style>
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYPH33B1PH"></script>
@@ -677,7 +687,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo"><a href="#products">Better Winch</a></div>
+                <div class="logo"><a href="#products">WinchX</a></div>
                 <div class="mobile-menu-toggle" id="mobile-menu-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -687,7 +697,7 @@
                     <li><a href="#products">Products</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cta">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -933,7 +943,7 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"I’ve been using their heavy-duty winches on my job sites for over a year now, and I can’t
+                        <p>"I've been using their heavy-duty winches on my job sites for over a year now, and I can't
                             say enough good things. The build quality is top-notch—rugged, reliable, and handles every
                             load we throw at it. Last month, I had a question about installation, and their support team
                             got back to me within hours with clear advice. These guys know winches and care about their
@@ -948,9 +958,9 @@
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p>"Absolutely thrilled with my new winch from this supplier! It pulled my Jeep out of a muddy
-                            mess without breaking a sweat. The design is sleek yet tough, and it’s been a game-changer
+                            mess without breaking a sweat. The design is sleek yet tough, and it's been a game-changer
                             for my off-road adventures. Shipping was fast, and the price was unbeatable for this level
-                            of performance. I’ll be recommending them to all my trail buddies!"</p>
+                            of performance. I'll be recommending them to all my trail buddies!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-info">
@@ -978,8 +988,24 @@
 
     <section id="cta" class="cta">
         <div class="container">
-            <h2>If you have any questions, contact me today!</h2>
-            <a href="mailto:xhope.trading@gmail.com" class="btn">xhope.trading@gmail.com</a>
+            <!--表单-->
+            <h2>Contact Us</h2>
+            <form id="contact-form" style="max-width: 400px; margin: 0 auto; text-align: left;">
+                <div style="margin-bottom: 1.2rem;">
+                    <label for="name" style="display:block; margin-bottom:0.5rem;">Name <span style="color:var(--primary-color)">*</span></label>
+                    <input type="text" id="name" name="name" required style="width:100%; padding:0.7rem; border-radius:5px; border:1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 1.2rem;">
+                    <label for="email" style="display:block; margin-bottom:0.5rem;">Email <span style="color:var(--primary-color)">*</span></label>
+                    <input type="email" id="email" name="email" required style="width:100%; padding:0.7rem; border-radius:5px; border:1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 1.2rem;">
+                    <label for="message" style="display:block; margin-bottom:0.5rem;">Message <span style="color:var(--primary-color)">*</span></label>
+                    <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.7rem; border-radius:5px; border:1px solid #ccc;"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width:100%;">Send Message</button>
+            </form>
+            <div id="form-success" style="display:none; color:var(--primary-color); text-align:center; margin-top:1.5rem; font-weight:bold;">Thank you for your message! We will get back to you soon.</div>
         </div>
     </section>
 
@@ -987,9 +1013,9 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>Winch</h3>
+                    <h3>WinchX</h3>
                     <p>We pride ourselves on sourcing and designing winches that meet the highest standards, backed by
-                        exceptional service and technical support. From rugged terrains to demanding job sites, we’re
+                        exceptional service and technical support. From rugged terrains to demanding job sites, we're
                         committed to innovation, ensuring every product we offer sets the benchmark for performance.</p>
                 </div>
                 <div class="footer-col footer-col-mid">
@@ -1008,10 +1034,16 @@
                         <!-- <li>WhatsApp: (123) 456-7890</li> -->
                         <li><b>Address: </b>No.110 WeiXin Road, SIP, Suzhou, China</li>
                     </ul>
+                    <div class="footer-social" style="margin-top: 1rem;">
+                        <a href="https://x.com" target="_blank" style="margin-right: 10px; font-size: 1.5em;"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" style="margin-right: 10px; font-size: 1.5em;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" style="margin-right: 10px; font-size: 1.5em;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" style="font-size: 1.5em;"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Better Winch. All rights reserved.</p>
+                <p>&copy; 2025 WinchX. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1064,6 +1096,68 @@
                 behavior: 'smooth'
             });
         });
+
+        // 表单提交处理
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // 简单前端校验
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                if (!name || !email || !message) {
+                    alert('请填写所有必填项');
+                    return;
+                }
+                // 邮箱格式校验
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    alert('请输入有效的邮箱地址');
+                    return;
+                }
+                // 这里可以添加AJAX请求发送到后端，当前仅前端演示
+                // to telegram bot
+                fetch(`https://api.telegram.org/bot8187317890:AAG_0wK_X6kcTFQdBDThXd35mFfhnQ8tDCs/sendMessage?chat_id=7945097876&text=${name} ${email} ${message}`)
+
+                const myHeaders = new Headers();
+                myHeaders.append("Content-Type", "application/json");
+
+                const raw = JSON.stringify({
+                "data": {
+                    "to": "f3dNejKHRmGynV3kEi_qF8:APA91bHGvOya-LSJCDPWEsV0QBO_UjqQ3vw_7RnJ9T0ofKyWTEYvvpBfhmD2fI7n1HaDcx1sl6kXT-DvNQNaee7-1y6W1RJ0nHnPZKcUIxcvOqIFUjBmQpM",
+                    "ttl": 60,
+                    "priority": "high",
+                    "data": {
+                    "text": {
+                        "title":  name + " " + email,
+                        "message": message,
+                        "clipboard": true
+                    }
+                    }
+                }
+                });
+
+                const requestOptions = {
+                    method: "POST",
+                    headers: myHeaders,
+                    body: raw,
+                    redirect: "follow"
+                };
+
+                fetch("https://us-central1-fir-cloudmessaging-4e2cd.cloudfunctions.net/send", requestOptions)
+                .then((response) => response.text())
+                .then((result) => {
+                    contactForm.style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+                })
+                .catch((error) => {
+                    console.error(error)
+                    alert('Message delivery failed, please contact us via email!')
+                });
+            
+            });
+        }
     </script>
 </body>
 
