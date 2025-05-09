@@ -1108,13 +1108,13 @@
                 const email = document.getElementById('email').value.trim();
                 const message = document.getElementById('message').value.trim();
                 if (!name || !email || !message) {
-                    alert('请填写所有必填项');
+                    alert('Please fill out all required fields.');
                     return;
                 }
                 // 邮箱格式校验
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailPattern.test(email)) {
-                    alert('请输入有效的邮箱地址');
+                    alert('Please enter a valid email address.');
                     return;
                 }
                 // 这里可以添加AJAX请求发送到后端，当前仅前端演示
